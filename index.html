@@ -1,1 +1,57 @@
 
+<section class="fotos-trabajo">
+  <h2>Nuestro trabajo</h2>
+  <p>Profesionalidad y confianza en cada instalación.</p>
+
+  <div class="galeria">
+    <img
+      src="aquilino-furgoneta.jpg"
+      alt="Furgoneta de Aquilino Instalaciones"
+    >
+
+    <img
+      src="aquilino-furgoneta-trasera.jpg"
+      alt="Vehículo de Aquilino Instalaciones y servicios eléctricos"
+    >
+  </div>
+</section>
+
+<style>
+  .fotos-trabajo {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f5f7fa;
+  }
+
+  .fotos-trabajo h2 {
+    color: #12345a;
+    font-size: 32px;
+  }
+
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto 0;
+  }
+
+  .galeria img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px #0002;
+  }
+
+  @media (max-width: 600px) {
+    .galeria {
+      grid-template-columns: 1fr;
+    }
+
+    .galeria img {
+      height: auto;
+    }
+  }
+</style>
+
